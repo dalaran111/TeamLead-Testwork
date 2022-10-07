@@ -1,0 +1,132 @@
+@keyframes greenpulse {
+  from {
+    filter: none;
+  }
+  50% {
+    filter: drop-shadow(0px 0px 0.5rem rgb(96, 241, 152));
+  }
+  to {
+    filter: none;
+  }
+}
+
+@keyframes pricepulse{
+  from {
+    filter: none;
+  }
+  50% {
+    filter: drop-shadow(2px 2px 0.1rem rgb(30, 253, 0));
+    color: green;
+  }
+  to {
+    filter: none;
+  }
+}
+
+//Keyframes for slider
+@-moz-keyframes animate-text-down {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes animate-text-down {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-o-keyframes animate-text-down {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animate-text-down {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes scale-circ {
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scale-circ {
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes scale-circ {
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-circ {
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes nav-animation {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nav-animation {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes nav-animation {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes nav-animation {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes brush {
+	0% {
+		-webkit-mask-position: 0 0;
+		mask-position: 0 0;
+	}
+	100% {
+		-webkit-mask-position: 295px 0px;
+		mask-position: 295px 0px;
+	}
+}

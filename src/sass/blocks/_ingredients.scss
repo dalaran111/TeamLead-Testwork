@@ -1,0 +1,89 @@
+.ingredients {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #ffffff;
+    opacity: 1;
+    background: linear-gradient(135deg, #f6f6f655 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #f6f6f6 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #f6f6f655 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #f6f6f6 25%, #ffffff 25%) 0px 0/ 80px 80px;
+    width: 100%;
+    &__wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 320px 320px 320px;
+        grid-template-rows: auto;
+        grid-auto-rows: minmax(240px, auto);
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+    &__column {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, minmax(200px, auto));
+        row-gap: 15px;
+    }
+    &__item {
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+
+        position: relative;
+        background: #fffffa00;
+        box-shadow: 0px 8px 25px 0px rgba(189, 189, 189, 0.445);
+        transition: all .4s ease;
+        z-index: 0;
+        &-product {
+            grid-row: 2 / 3;
+            align-self: center;
+            margin: 0 auto;
+
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
+        &__img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100px;
+            height: 100px;
+            border-width: 1px;
+            border-color: black;
+            border-radius: 100%;
+            border-style:ridge;
+            border-image:initial; 
+            animation-name: greenpulse;
+            animation-duration: 8s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;          
+        }
+        &__text {
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            background: #fffffa00;
+            box-shadow: 0px 8px 25px 0px rgba(22, 22, 22, 0.418);
+            transition: all .4s ease;
+
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 20px;
+        } 
+    }
+    &__btn {
+        grid-row: 3 / 4;
+        align-self: end;
+        border: none;
+        border-radius: 60px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}
