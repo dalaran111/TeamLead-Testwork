@@ -9,7 +9,7 @@
     &__wrapper {
         width: 900px;
         margin: 0 auto;
-        height: 470px;
+        height: auto;
         display: grid;
         grid-template-columns: auto 450px;
         grid-template-rows: auto;
@@ -84,7 +84,7 @@
         font-size: 28px;
         line-height: 28px;
         font-weight: 600;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
     &_btn {
         margin: 0;
